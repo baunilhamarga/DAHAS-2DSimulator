@@ -1,3 +1,9 @@
+# DAHAS #
+###################
+dahas
+.vscode
+*cache
+
 # Compiled source #
 ###################
 *.com
