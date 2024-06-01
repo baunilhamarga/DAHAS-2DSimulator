@@ -1181,7 +1181,7 @@ class Plotter:
                     self.axes[axes_i].text(
                         x,
                         y,
-                        f"R={round(node.Fx, 2)}",
+                        f"R={abs(round(node.Fx, 2))}",
                         color=self.plot_colors["reaction_force_text"],
                         fontsize=9,
                         zorder=10,
@@ -1212,7 +1212,7 @@ class Plotter:
                     self.axes[axes_i].text(
                         x,
                         y,
-                        f"R={round(node.Fy, 2)}",
+                        f"R={abs(round(node.Fy, 2))}",
                         color=self.plot_colors["reaction_force_text"],
                         fontsize=9,
                         zorder=10,
