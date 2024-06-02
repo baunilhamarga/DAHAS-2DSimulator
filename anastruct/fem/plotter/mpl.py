@@ -7,15 +7,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from anastruct.basic import find_nearest, rotate_xy
-from anastruct.fem.plotter.values import (
-    PlottingValues,
-    det_scaling_factor,
-    plot_values_axial_force,
-    plot_values_bending_moment,
-    plot_values_deflection,
-    plot_values_element,
-    plot_values_shear_force,
-)
+from anastruct.fem.plotter.values import (PlottingValues, det_scaling_factor,
+                                          plot_values_axial_force,
+                                          plot_values_bending_moment,
+                                          plot_values_deflection,
+                                          plot_values_element,
+                                          plot_values_shear_force)
 
 if TYPE_CHECKING:
     from matplotlib.axes import Axes

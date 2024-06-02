@@ -2,19 +2,8 @@ import collections.abc
 import copy
 import math
 import re
-from typing import (
-    TYPE_CHECKING,
-    Any,
-    Collection,
-    Dict,
-    List,
-    Literal,
-    Optional,
-    Sequence,
-    Set,
-    Tuple,
-    Union,
-)
+from typing import (TYPE_CHECKING, Any, Collection, Dict, List, Literal,
+                    Optional, Sequence, Set, Tuple, Union)
 
 import numpy as np
 
@@ -30,15 +19,8 @@ if TYPE_CHECKING:
     from matplotlib.figure import Figure
 
     from anastruct.fem.node import Node
-    from anastruct.types import (
-        AxisNumber,
-        Dimension,
-        LoadDirection,
-        MpType,
-        Spring,
-        SupportDirection,
-        VertexLike,
-    )
+    from anastruct.types import (AxisNumber, Dimension, LoadDirection, MpType,
+                                 Spring, SupportDirection, VertexLike)
 
 
 class SystemElements:
@@ -160,7 +142,7 @@ class SystemElements:
         )  # keys are element ids, values are dicts: {node_index: max moment capacity}
         self.buckling_factor: Optional[float] = None
 
-        # previous point of element
+        # previous point of e lement
         self._previous_point = Vertex(0, 0)
         self.load_factor = load_factor
 
